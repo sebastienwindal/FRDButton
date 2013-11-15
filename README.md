@@ -1,7 +1,7 @@
 FRDButton
 =========
 
-This is a fork of the great [https://github.com/mattlawer/BButton](BButton), modified
+This is a fork of the great [BButton](https://github.com/mattlawer/BButton), modified
 to tone it down to use in iOS7 apps:
 - less borders
 - less shadows
