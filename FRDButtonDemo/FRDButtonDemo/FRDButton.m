@@ -29,12 +29,9 @@
 
 - (void)setup
 {
-    if (!self.fontSize)
-        self.fontSize = @17.0f;
-    
     self.backgroundColor = [UIColor clearColor];
     self.fastTitleLabel.shadowOffset = CGSizeMake(0.0f, -1.0f);
-    self.fastTitleLabel.font = [UIFont boldSystemFontOfSize:self.fontSize.floatValue];
+    self.fastTitleLabel.font = self.titleLabel.font;
     self.shouldShowDisabled = YES;
     [self setType:FRDButtonTypeDefault];
 
@@ -45,26 +42,9 @@
     return [self initWithFrame:frame color:[FRDButton colorForButtonType:type]];
 }
 
-- (id)initWithFrame:(CGRect)frame type:(FRDButtonType)type fontSize:(CGFloat)fontSize
-{
-    return [self initWithFrame:frame
-                         color:[FRDButton colorForButtonType:type]
-                      fontSize:fontSize];
-}
-
 - (id)initWithFrame:(CGRect)frame color:(UIColor *)aColor
 {
-    self = [self initWithFrame:frame];
-    if(self) {
-        self.color = aColor;
-    }
-    return self;
-}
-
-- (id)initWithFrame:(CGRect)frame color:(UIColor *)aColor fontSize:(CGFloat)fontSize
-{
     self = [self initWithFrame:frame color:aColor];
-    self.fontSize = @(fontSize);
     
     if(self) {
         self.fastTitleLabel.textAlignment = NSTextAlignmentCenter;
@@ -143,14 +123,6 @@
         [self setGradientEnabled:self.enabled];
     else
         [self setGradientEnabled:YES];
-    
-    [self setNeedsDisplay];
-}
-
--(void) setFontSize:(NSNumber *)fontSize
-{
-    _fontSize = fontSize;
-    self.fastTitleLabel.font = [UIFont boldSystemFontOfSize:_fontSize.floatValue];
     
     [self setNeedsDisplay];
 }
@@ -281,11 +253,12 @@
         }
         CGContextRestoreGState(context);
     } else {
+        // slighty change the button color when it is tapped (highlighted).
         CGContextSaveGState(context);
         {
             CGRect rectangle = self.bounds;
             CGContextAddRect(context, rectangle);
-            UIColor *offColor = self.color.isLightColor ? [self.color darkenColorWithValue:0.2] : [self.color lightenColorWithValue:0.2];
+            UIColor *offColor = self.color.isLightColor ? [self.color darkenColorWithValue:0.1] : [self.color lightenColorWithValue:0.25];
             CGContextSetFillColorWithColor(context, offColor.CGColor);
             CGContextFillRect(context, rectangle);
         }

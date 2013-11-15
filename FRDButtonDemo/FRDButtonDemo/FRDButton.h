@@ -26,15 +26,11 @@ typedef enum {
 
 @property (strong, nonatomic) UIColor *color;
 
-@property (strong, nonatomic) NSNumber *fontSize;
 @property (assign, nonatomic) BOOL shouldShowDisabled;
 
 #pragma mark - Initialization
 - (id)initWithFrame:(CGRect)frame type:(FRDButtonType)type;
-- (id)initWithFrame:(CGRect)frame type:(FRDButtonType)type fontSize:(CGFloat)fontSize;
-
 - (id)initWithFrame:(CGRect)frame color:(UIColor *)aColor;
-- (id)initWithFrame:(CGRect)frame color:(UIColor *)aColor fontSize:(CGFloat)fontSize;
 
 #pragma mark - BButton
 - (void)setType:(FRDButtonType)type;
