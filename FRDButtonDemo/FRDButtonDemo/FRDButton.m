@@ -9,6 +9,9 @@
 #import "FRDButton.h"
 #import <CoreGraphics/CoreGraphics.h>
 #import "UIColor+FRDButton.h"
+#import "UIColor+Hex.h"
+#import "UIColor+Crayola.h"
+
 
 @interface FRDButton()
 
@@ -98,7 +101,19 @@
 
 #pragma mark - Setters
 
+-(void) setColorHexString:(NSString *)colorHexString
+{
+    _colorHexString = colorHexString;
+    
+    [self setColor:[UIColor colorWithHexString:colorHexString]];
+}
 
+-(void) setColorCrayola:(NSString *)colorCrayola
+{
+    _colorCrayola = colorCrayola;
+    
+    [self setColor:[UIColor colorWithCrayola:colorCrayola]];
+}
 
 - (void)setColor:(UIColor *)newColor
 {

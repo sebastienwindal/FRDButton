@@ -25,6 +25,9 @@ typedef enum {
 @interface FRDButton : UIButton
 
 @property (strong, nonatomic) UIColor *color;
+@property (nonatomic, strong) NSString *colorHexString;
+@property (nonatomic, strong) NSString *colorCrayola;
+
 
 @property (assign, nonatomic) BOOL shouldShowDisabled;
 

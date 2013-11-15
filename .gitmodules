@@ -1,0 +1,3 @@
+[submodule "EDColor"]
+	path = EDColor
+	url = https://github.com/thisandagain/color.git
