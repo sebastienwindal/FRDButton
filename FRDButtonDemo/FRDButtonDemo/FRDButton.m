@@ -117,6 +117,18 @@
 }
 
 #pragma mark - Setters
+
+-(void) setHexColorStr:(NSString *)hexColorStr
+{
+    _hexColorStr = hexColorStr;
+}
+
+-(void) setCrayloaColorStr:(NSString *)crayloaColorStr
+{
+    _crayloaColorStr = crayloaColorStr;
+}
+
+
 - (void)setColor:(UIColor *)newColor
 {
     _color = newColor;
@@ -277,6 +289,17 @@
             [roundedRectangleNegativePath fill];
         }
         CGContextRestoreGState(context);
+    } else {
+        CGContextSaveGState(context);
+        {
+            CGRect rectangle = self.bounds;
+            CGContextAddRect(context, rectangle);
+            UIColor *offColor = self.color.isLightColor ? [self.color darkenColorWithValue:0.2] : [self.color lightenColorWithValue:0.2];
+            CGContextSetFillColorWithColor(context, offColor.CGColor);
+            CGContextFillRect(context, rectangle);
+        }
+        CGContextRestoreGState(context);
+        
     }
     
     [border setStroke];
@@ -287,7 +310,7 @@
 - (void)setGradientEnabled:(BOOL)enabled
 {
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    UIColor *topColor = enabled ? [self.color lightenColorWithValue:0.04f] : [self.color darkenColorWithValue:0.04f];
+    UIColor *topColor = enabled ? [self.color lightenColorWithValue:0.1f] : [self.color darkenColorWithValue:0.1f];
     
     NSArray *newGradientColors = [NSArray arrayWithObjects:(id)topColor.CGColor, (id)self.color.CGColor, nil];
     CGFloat newGradientLocations[] = {0.0f, 1.0f};

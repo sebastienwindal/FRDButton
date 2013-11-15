@@ -88,7 +88,7 @@
         sum = (components[0] + components[1] + components[2]) / 3.0f;
     }
     
-    return (sum > 0.8f);
+    return (sum > 0.5f);
 }
 
 @end
