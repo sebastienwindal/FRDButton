@@ -21,13 +21,13 @@
 		28034B9718307E5A0070E702 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28034B9518307E5A0070E702 /* InfoPlist.strings */; };
 		28034B9918307E5A0070E702 /* FRDButtonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28034B9818307E5A0070E702 /* FRDButtonDemoTests.m */; };
 		28034BA418307E9E0070E702 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28034BA318307E9E0070E702 /* MainViewController.m */; };
-		28C139BA18365E7C00F64D95 /* FRDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C139B718365E7C00F64D95 /* FRDButton.m */; };
-		28C139BB18365E7C00F64D95 /* UIColor+FRDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C139B918365E7C00F64D95 /* UIColor+FRDButton.m */; };
 		28C13A151836ACF600F64D95 /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C13A0C1836ACF600F64D95 /* UIColor+CIELAB.m */; };
 		28C13A161836ACF600F64D95 /* UIColor+Crayola.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C13A0E1836ACF600F64D95 /* UIColor+Crayola.m */; };
 		28C13A171836ACF600F64D95 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C13A101836ACF600F64D95 /* UIColor+Hex.m */; };
 		28C13A181836ACF600F64D95 /* UIColor+HSB.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C13A121836ACF600F64D95 /* UIColor+HSB.m */; };
 		28C13A191836ACF600F64D95 /* UIColor+HSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C13A141836ACF600F64D95 /* UIColor+HSL.m */; };
+		28C13A1E1836B15500F64D95 /* FRDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C13A1B1836B15500F64D95 /* FRDButton.m */; };
+		28C13A1F1836B15500F64D95 /* UIColor+FRDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C13A1D1836B15500F64D95 /* UIColor+FRDButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +60,6 @@
 		28034B9818307E5A0070E702 /* FRDButtonDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRDButtonDemoTests.m; sourceTree = "<group>"; };
 		28034BA218307E9E0070E702 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		28034BA318307E9E0070E702 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		28C139B618365E7C00F64D95 /* FRDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDButton.h; sourceTree = "<group>"; };
-		28C139B718365E7C00F64D95 /* FRDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDButton.m; sourceTree = "<group>"; };
-		28C139B818365E7C00F64D95 /* UIColor+FRDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FRDButton.h"; sourceTree = "<group>"; };
-		28C139B918365E7C00F64D95 /* UIColor+FRDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FRDButton.m"; sourceTree = "<group>"; };
 		28C13A091836ACF600F64D95 /* Crayola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crayola.h; sourceTree = "<group>"; };
 		28C13A0A1836ACF600F64D95 /* EDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDColor.h; sourceTree = "<group>"; };
 		28C13A0B1836ACF600F64D95 /* UIColor+CIELAB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CIELAB.h"; sourceTree = "<group>"; };
@@ -76,6 +72,10 @@
 		28C13A121836ACF600F64D95 /* UIColor+HSB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HSB.m"; sourceTree = "<group>"; };
 		28C13A131836ACF600F64D95 /* UIColor+HSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HSL.h"; sourceTree = "<group>"; };
 		28C13A141836ACF600F64D95 /* UIColor+HSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HSL.m"; sourceTree = "<group>"; };
+		28C13A1A1836B15500F64D95 /* FRDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRDButton.h; path = ../../FRDButton/FRDButton.h; sourceTree = "<group>"; };
+		28C13A1B1836B15500F64D95 /* FRDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRDButton.m; path = ../../FRDButton/FRDButton.m; sourceTree = "<group>"; };
+		28C13A1C1836B15500F64D95 /* UIColor+FRDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+FRDButton.h"; path = "../../FRDButton/UIColor+FRDButton.h"; sourceTree = "<group>"; };
+		28C13A1D1836B15500F64D95 /* UIColor+FRDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FRDButton.m"; path = "../../FRDButton/UIColor+FRDButton.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +135,10 @@
 		28034B6D18307E5A0070E702 /* FRDButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
-				28C139B618365E7C00F64D95 /* FRDButton.h */,
-				28C139B718365E7C00F64D95 /* FRDButton.m */,
-				28C139B818365E7C00F64D95 /* UIColor+FRDButton.h */,
-				28C139B918365E7C00F64D95 /* UIColor+FRDButton.m */,
+				28C13A1A1836B15500F64D95 /* FRDButton.h */,
+				28C13A1B1836B15500F64D95 /* FRDButton.m */,
+				28C13A1C1836B15500F64D95 /* UIColor+FRDButton.h */,
+				28C13A1D1836B15500F64D95 /* UIColor+FRDButton.m */,
 				28C13A081836ACD100F64D95 /* EDColor */,
 				28034B7618307E5A0070E702 /* AppDelegate.h */,
 				28034B7718307E5A0070E702 /* AppDelegate.m */,
@@ -297,15 +297,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C13A161836ACF600F64D95 /* UIColor+Crayola.m in Sources */,
+				28C13A1E1836B15500F64D95 /* FRDButton.m in Sources */,
 				28C13A191836ACF600F64D95 /* UIColor+HSL.m in Sources */,
 				28034B7818307E5A0070E702 /* AppDelegate.m in Sources */,
+				28C13A1F1836B15500F64D95 /* UIColor+FRDButton.m in Sources */,
 				28C13A151836ACF600F64D95 /* UIColor+CIELAB.m in Sources */,
 				28034BA418307E9E0070E702 /* MainViewController.m in Sources */,
 				28C13A181836ACF600F64D95 /* UIColor+HSB.m in Sources */,
-				28C139BA18365E7C00F64D95 /* FRDButton.m in Sources */,
 				28C13A171836ACF600F64D95 /* UIColor+Hex.m in Sources */,
 				28034B7418307E5A0070E702 /* main.m in Sources */,
-				28C139BB18365E7C00F64D95 /* UIColor+FRDButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
