@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'FRDButton'
-  spec.version = '0.1'
+  spec.version = '0.2'
   spec.authors = { 'Sebastien Windal' => 'sebastien@windal.net' }
   spec.homepage = 'https://github.com/sebastienwindal/FRDButton'
   spec.summary = 'Buttons, bootstrap/BButton inspired, toned down for use in iOS7 apps.'
