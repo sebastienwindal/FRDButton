@@ -10,4 +10,5 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.frameworks = 'UIKit', 'CoreGraphics'
   spec.source_files = 'FRDButton'
+  spec.dependency 'EDColor'
 end
