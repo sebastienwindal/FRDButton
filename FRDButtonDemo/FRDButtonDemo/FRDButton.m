@@ -35,7 +35,7 @@
     self.backgroundColor = [UIColor clearColor];
     self.fastTitleLabel.shadowOffset = CGSizeMake(0.0f, -1.0f);
     self.fastTitleLabel.font = [UIFont boldSystemFontOfSize:self.fontSize.floatValue];
-    self.shouldShowDisabled = NO;
+    self.shouldShowDisabled = YES;
     [self setType:FRDButtonTypeDefault];
 
 }
