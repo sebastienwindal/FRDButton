@@ -21,8 +21,8 @@
 		28034B9718307E5A0070E702 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28034B9518307E5A0070E702 /* InfoPlist.strings */; };
 		28034B9918307E5A0070E702 /* FRDButtonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28034B9818307E5A0070E702 /* FRDButtonDemoTests.m */; };
 		28034BA418307E9E0070E702 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28034BA318307E9E0070E702 /* MainViewController.m */; };
-		28034BA718307EB40070E702 /* FRDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28034BA618307EB40070E702 /* FRDButton.m */; };
-		28034BAA1830816A0070E702 /* UIColor+FRDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28034BA91830816A0070E702 /* UIColor+FRDButton.m */; };
+		28C139BA18365E7C00F64D95 /* FRDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C139B718365E7C00F64D95 /* FRDButton.m */; };
+		28C139BB18365E7C00F64D95 /* UIColor+FRDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C139B918365E7C00F64D95 /* UIColor+FRDButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +55,10 @@
 		28034B9818307E5A0070E702 /* FRDButtonDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRDButtonDemoTests.m; sourceTree = "<group>"; };
 		28034BA218307E9E0070E702 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		28034BA318307E9E0070E702 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		28034BA518307EB40070E702 /* FRDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDButton.h; sourceTree = "<group>"; };
-		28034BA618307EB40070E702 /* FRDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDButton.m; sourceTree = "<group>"; };
-		28034BA81830816A0070E702 /* UIColor+FRDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FRDButton.h"; sourceTree = "<group>"; };
-		28034BA91830816A0070E702 /* UIColor+FRDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FRDButton.m"; sourceTree = "<group>"; };
+		28C139B618365E7C00F64D95 /* FRDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDButton.h; sourceTree = "<group>"; };
+		28C139B718365E7C00F64D95 /* FRDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDButton.m; sourceTree = "<group>"; };
+		28C139B818365E7C00F64D95 /* UIColor+FRDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FRDButton.h"; sourceTree = "<group>"; };
+		28C139B918365E7C00F64D95 /* UIColor+FRDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FRDButton.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +118,10 @@
 		28034B6D18307E5A0070E702 /* FRDButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				28C139B618365E7C00F64D95 /* FRDButton.h */,
+				28C139B718365E7C00F64D95 /* FRDButton.m */,
+				28C139B818365E7C00F64D95 /* UIColor+FRDButton.h */,
+				28C139B918365E7C00F64D95 /* UIColor+FRDButton.m */,
 				28034B7618307E5A0070E702 /* AppDelegate.h */,
 				28034B7718307E5A0070E702 /* AppDelegate.m */,
 				28034B7918307E5A0070E702 /* Main_iPhone.storyboard */,
@@ -125,10 +129,6 @@
 				28034B6E18307E5A0070E702 /* Supporting Files */,
 				28034BA218307E9E0070E702 /* MainViewController.h */,
 				28034BA318307E9E0070E702 /* MainViewController.m */,
-				28034BA518307EB40070E702 /* FRDButton.h */,
-				28034BA618307EB40070E702 /* FRDButton.m */,
-				28034BA81830816A0070E702 /* UIColor+FRDButton.h */,
-				28034BA91830816A0070E702 /* UIColor+FRDButton.m */,
 			);
 			path = FRDButtonDemo;
 			sourceTree = "<group>";
@@ -260,10 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28034B7818307E5A0070E702 /* AppDelegate.m in Sources */,
-				28034BA718307EB40070E702 /* FRDButton.m in Sources */,
 				28034BA418307E9E0070E702 /* MainViewController.m in Sources */,
+				28C139BA18365E7C00F64D95 /* FRDButton.m in Sources */,
 				28034B7418307E5A0070E702 /* main.m in Sources */,
-				28034BAA1830816A0070E702 /* UIColor+FRDButton.m in Sources */,
+				28C139BB18365E7C00F64D95 /* UIColor+FRDButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +474,7 @@
 				28034B9E18307E5A0070E702 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28034B9F18307E5A0070E702 /* Build configuration list for PBXNativeTarget "FRDButtonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +483,7 @@
 				28034BA118307E5A0070E702 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
