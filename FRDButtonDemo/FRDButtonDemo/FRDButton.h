@@ -26,7 +26,7 @@ typedef enum {
 
 @property (strong, nonatomic) UIColor *color;
 @property (nonatomic, strong) NSString *hexColorStr;
-@property (nonatomic, strong) NSString *crayloaColorStr;
+@property (nonatomic, strong) NSString *crayolaColorStr;
 
 @property (strong, nonatomic) NSNumber *fontSize;
 @property (assign, nonatomic) BOOL shouldShowDisabled;

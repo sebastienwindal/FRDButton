@@ -123,9 +123,9 @@
     _hexColorStr = hexColorStr;
 }
 
--(void) setCrayloaColorStr:(NSString *)crayloaColorStr
+-(void) setCrayolaColorStr:(NSString *)crayolaColorStr
 {
-    _crayloaColorStr = crayloaColorStr;
+    _crayolaColorStr = crayolaColorStr;
 }
 
 
